@@ -18,12 +18,18 @@ body {
     background: rgb(241, 234, 233);
 background: linear-gradient(0deg, rgba(255, 255, 255, 0.443) 21%, rgba(231, 231, 231, 0.357) 100%);
     border-radius: 16px;
-    width: 624px;
+    width: 42%;
     margin: 16px;
     padding: 32px;
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
 }
-
+@media (orientation: portrait) {
+    .main {
+        width: 100%;
+        margin-top: -30%;
+        padding: 0;
+}
+}
 .person {
 display: flex;
 align-items: flex-start;
@@ -55,10 +61,15 @@ font-weight: normal;
 
 .person__position {
     font-size: 18px;
-    color: #545454;
+    color: #bb0d0d33;
     margin: 0;
     font-style: italic;
 }
+.person__position ul {
+
+background-color: rgb(241, 234, 233)!important;
+}
+
 .special {
     color: rgb(163, 64, 6);
 }
