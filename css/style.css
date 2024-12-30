@@ -1,11 +1,11 @@
 @font-face {
     font-family: Pragmatica;
-    src: url("/font/Pragmatica.ttf") format("opentype");
+    src: url("../font/Pragmatica-Light.ttf") format("opentype");
 }
 
 @font-face {
     font-family: PragmaticaBold;
-    src: url("/font/PragmaticaExtendedBook.otf") format("opentype");
+    src: url("../font/PragmaticaExtendedBook.otf") format("opentype");
 }
 
 
@@ -86,6 +86,7 @@ vertical-align: -webkit-baseline-middle;
     text-align: left;
     margin: 1vmin;
     display: none;
+    font-family: Pragmatica, Arial, sans-serif;
     transition: opacity 1.3s ease, display 1.3s ease allow-discrete; 
   
     &.open {
