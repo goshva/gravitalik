@@ -123,7 +123,7 @@
                 <a href="https://t.me/gravitalik" target="_blank">
                     <img src="tg.svg" alt="social" class="social">
                 </a>
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://www.tiktok.com/@gravitalik?_t=ZS-8sjXpZwvq6B&_r=1" target="_blank">
                     <img src="tok.svg" alt="social" class="social">
                 </a>
                 </a>
@@ -142,30 +142,24 @@
     </div>
 </body>
 <script>
-    var mb = document.getElementById('mb')
-    var mk = document.getElementById('mk')
-    var kg = document.getElementById('kg')
-    var pp = document.getElementById('pp')
+
     var all = document.getElementsByClassName('product')
+    function closeAll() {
+        for (let i = 0; i < all.length; i++) {
+            all[i].className = 'product';
+        }
+    }
     let cards = document.querySelectorAll('.card');
     cards.forEach(function (card) {
         card.addEventListener('click', function (ex) {
-            
-            //toggle('product', 'none');
+            closeAll()
             var active = document.getElementById(this.dataset.id)
             console.log(active);
             active.className = 'product open';
             
         });
     });
-    function toggle(className, displayState) {
-        var elements = document.getElementsByClassName(className)
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = displayState;
-        }
-    }
-    //toggle('product', 'block'); // Shows
-    //toggle('product', 'none'); // hides
+
 
 
 </script>
